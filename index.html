@@ -4,65 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeatMate Mini Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        .hero { background: url('hero-bg.jpg') no-repeat center center/cover; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; }
-        .features { display: flex; justify-content: space-around; padding: 50px 10%; }
-        .feature { width: 30%; text-align: center; }
-        .cta { background-color: #ff6200ee; color: white; padding: 15px 30px; font-size: 20px; border: none; cursor: pointer; margin: 20px; }
-        .contact-form { padding: 50px; background-color: #f9f9f9; }
-        .form-group { margin-bottom: 15px; }
-        @media (max-width: 768px) {
-            .features { flex-direction: column; align-items: center; }
-            .feature { width: 80%; margin-bottom: 30px; }
-            .cta { width: 80%; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .hero {
+            background-color: #ff6200;
+            padding: 50px;
+            text-align: center;
+        }
+        .features, .testimonials, .cta, .contact {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .feature-cards {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .feature-card {
+            background: #333;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 30%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .testimonial {
+            background: #444;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        .cta {
+            background-color: #ff6200;
+            padding: 30px;
+        }
+        .contact-form {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 4px;
+        }
+        footer {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .feature-cards {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
     <div class="hero">
-        <h1>Welcome to HeatMate Mini</h1>
-        <p>The ultimate portable heating solution for all your needs.</p>
-        <button class="cta">Get Yours Today!</button>
+        <h1>Cold Hands? Not Anymore.</h1>
+        <p>Experience the HeatMate Mini that warms up in seconds.</p>
     </div>
     <div class="features">
-        <div class="feature">
-            <h2>Feature 1</h2>
-            <p>Short description about feature 1.</p>
-        </div>
-        <div class="feature">
-            <h2>Feature 2</h2>
-            <p>Short description about feature 2.</p>
-        </div>
-        <div class="feature">
-            <h2>Feature 3</h2>
-            <p>Short description about feature 3.</p>
+        <h2>Features</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <h3>Speed</h3>
+                <p>Warm up quickly and efficiently to keep your hands comfortable.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Portability</h3>
+                <p>Compact design, easy to carry wherever you go.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Comfort</h3>
+                <p>Soft and cozy to provide a comfortable warmth.</p>
+            </div>
         </div>
     </div>
-    <div class="social-proof">
+    <div class="testimonials">
         <h2>What Our Customers Say</h2>
-        <blockquote>
-            <p>"This product changed my life!" - Happy Customer</p>
-        </blockquote>
+        <div class="testimonial">
+            <p>"I can't believe how fast it warms up!" - Alex</p>
+        </div>
+        <div class="testimonial">
+            <p>"Finally, I can keep my hands warm during the winter!" - Jamie</p>
+        </div>
+        <div class="testimonial">
+            <p>"It's so portable! I take it everywhere!" - Taylor</p>
+        </div>
     </div>
-    <div class="contact-form">
+    <div class="cta">
+        <h2>Ready to stay warm?</h2>
+        <button>Buy Now</button>
+    </div>
+    <div class="contact">
         <h2>Contact Us</h2>
-        <form>
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="cta">Send Message</button>
+        <form class="contact-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Submit</button>
         </form>
     </div>
+    <footer>
+        <p>Follow us on social media!</p>
+        <a href="#" style="color: white; margin: 0 5px;">Facebook</a>
+        <a href="#" style="color: white; margin: 0 5px;">Twitter</a>
+        <a href="#" style="color: white; margin: 0 5px;">Instagram</a>
+    </footer>
 </body>
 </html>
