@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeatMate Mini</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .hero { background: #f57c00; padding: 50px; text-align: center; color: white; }
+        .features { display: flex; justify-content: space-around; padding: 20px; }
+        .feature { width: 30%; text-align: center; }
+        .testimonials { background: #e0e0e0; padding: 20px; }
+        .contact { padding: 20px; }
+        @media (max-width: 768px) {
+            .features { flex-direction: column; }
+            .feature { width: 100%; margin-bottom: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Welcome to HeatMate Mini</h1>
+        <button style="padding: 10px 20px; background: #ffffff; color: #f57c00; border: none; cursor: pointer;">Get Started</button>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <h2>Feature 1</h2>
+            <p>Description of feature 1.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature 2</h2>
+            <p>Description of feature 2.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature 3</h2>
+            <p>Description of feature 3.</p>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <h2>What Our Users Say</h2>
+        <p>"This product is amazing!" - User A</p>
+        <p>"I can't live without it." - User B</p>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div>
+            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        </div>
+    </div>
+    
+</body>
+</html>
