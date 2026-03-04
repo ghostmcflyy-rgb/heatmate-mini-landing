@@ -1,1 +1,153 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Landing Page</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            background-color: #1a1a1a;\n            color: #fff;\n            margin: 0;\n            padding: 20px;\n        }\n        header {\n            background: #ff6200;\n            padding: 20px;\n            text-align: center;\n        }\n        .hero {\n            padding: 50px 0;\n            text-align: center;\n            background: rgba(255, 98, 0, 0.1);\n        }\n        .social-media-cards {\n            display: flex;\n            flex-wrap: wrap;\n            justify-content: space-between;\n        }\n        .card {\n            background: #333;\n            padding: 15px;\n            margin: 10px;\n            flex: 1;\n            min-width: 300px;\n            border-radius: 8px;\n        }\n        .features, .testimonials {\n            margin: 20px 0;\n        }\n        footer {\n            background: #222;\n            padding: 10px;\n            text-align: center;\n            margin-top: 20px;\n        }\n        .contact-form {\n            display: flex;\n            flex-direction: column;\n        }\n        .contact-form input, .contact-form textarea, .contact-form button {\n            margin: 10px 0;\n            padding: 10px;\n        }\n    </style>\n</head>\n<body>\n<header>\n    <h1>Welcome to Our Landing Page</h1>\n</header>\n<div class="hero">\n    <h2>Your Success Starts Here</h2>\n    <p>Join us and transform your business with our innovative solutions.</p>\n    <button style="background: #ff6200; color: white; padding: 10px 20px; border: none;">Get Started</button>\n</div>\n<section class="social-media-cards">\n    <div class="card">\n        <h3>Instagram Post</h3>\n        <p>Engaging visuals to highlight your product.</p>\n        <button>Learn More</button>\n    </div>\n    <div class="card">\n        <h3>Facebook Ad</h3>\n        <p>Targeted ads to reach your ideal customers.</p>\n        <button>Learn More</button>\n    </div>\n    <div class="card">\n        <h3>Instagram Story</h3>\n        <p>Short snippets to captivate your audience.</p>\n        <button>Learn More</button>\n    </div>\n    <div class="card">\n        <h3>LinkedIn Ad</h3>\n        <p>Professional outreach for B2B connections.</p>\n        <button>Learn More</button>\n    </div>\n    <div class="card">\n        <h3>TikTok Post</h3>\n        <p>Trendy videos to grab attention quickly.</p>\n        <button>Learn More</button>\n    </div>\n</section>\n<section class="features">\n    <h2>Features</h2>\n    <ul>\n        <li>Feature 1: Effortless Integration</li>\n        <li>Feature 2: 24/7 Support</li>\n        <li>Feature 3: User-Friendly Interface</li>\n    </ul>\n</section>\n<section class="testimonials">\n    <h2>What Our Customers Say</h2>\n    <blockquote>"This has changed the way we do business!" - Happy Customer</blockquote>\n    <blockquote>"An essential tool for our marketing strategy!" - Satisfied Client</blockquote>\n</section>\n<section>\n    <h2>Contact Us</h2>\n    <form class="contact-form">\n        <input type="text" placeholder="Your Name" required>\n        <input type="email" placeholder="Your Email" required>\n        <textarea placeholder="Your Message" required></textarea>\n        <button type="submit" style="background: #ff6200; color: white;">Send Message</button>\n    </form>\n</section>\n<footer>\n    <p>&copy; 2026 Your Company. All rights reserved.</p>\n</footer>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatmate Mini Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(to right, #ff6200, #ff9444);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .social-cards, .feature-cards, .testimonial-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .card {
+            background: #f4f4f4;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex-basis: calc(30% - 40px);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+            background: #ff6200;
+            padding: 20px;
+            color: white;
+        }
+        .cta button {
+            background: white;
+            color: #ff6200;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cold Hands? Not Anymore</h1>
+    </header>
+    <div class="container">
+        <section class="social-cards">
+            <div class="card">
+                <h2>Instagram Post</h2>
+                <p>Tagline for Instagram ad.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="card">
+                <h2>Facebook Ad</h2>
+                <p>Tagline for Facebook ad.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="card">
+                <h2>Instagram Story</h2>
+                <p>Tagline for Instagram story.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="card">
+                <h2>LinkedIn Ad</h2>
+                <p>Tagline for LinkedIn ad.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="card">
+                <h2>TikTok Post</h2>
+                <p>Tagline for TikTok post.</p>
+                <button>Learn More</button>
+            </div>
+        </section>
+        <section class="feature-cards">
+            <div class="card">
+                <h2>Heats in 5 Seconds</h2>
+                <p>Description of quick heating feature.</p>
+            </div>
+            <div class="card">
+                <h2>Pocket-Sized Design</h2>
+                <p>Description of the pocket-sized feature.</p>
+            </div>
+            <div class="card">
+                <h2>Stay Focused & Warm</h2>
+                <p>Description of maintaining warmth.</p>
+            </div>
+        </section>
+        <section class="testimonial-cards">
+            <div class="card">
+                <h2>⭐⭐⭐⭐⭐</h2>
+                <p>"This product changed my life!" - Happy Customer</p>
+            </div>
+            <div class="card">
+                <h2>⭐⭐⭐⭐⭐</h2>
+                <p>"Unbelievably warm and handy!" - Satisfied User</p>
+            </div>
+            <div class="card">
+                <h2>⭐⭐⭐⭐⭐</h2>
+                <p>"Can't live without it!" - Loyal Customer</p>
+            </div>
+        </section>
+        <section class="cta">
+            <h2>Get Yours Now!</h2>
+            <button>Order Now</button>
+        </section>
+        <form>
+            <h2>Contact Us</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2026 Heatmate. Follow us on our social media!</p>
+    </footer>
+</body>
+</html>
