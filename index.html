@@ -1,1 +1,68 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>HeatMate Mini Landing Page</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n        header {\n            background: #333;\n            color: #fff;\n            padding: 20px;\n            text-align: center;\n        }\n        .hero {\n            background-image: url('path/to/image.jpg');\n            height: 60vh;\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            align-items: center;\n            color: white;\n            text-align: center;\n        }\n        .features, .testimonials, .cta, .contact {\n            padding: 40px;\n            text-align: center;\n        }\n        .feature {\n            margin: 20px 0;\n        }\n        .cta {\n            background: #ff6600;\n            color: white;\n        }\n        form {\n            display: flex;\n            flex-direction: column;\n            margin: auto;\n            max-width: 300px;\n        }\n        input, textarea {\n            margin: 10px 0;\n            padding: 10px;\n            border: 1px solid #ccc;\n        }\n        @media (max-width: 600px) {\n            .hero {\n                height: 40vh;\n            }\n            .features, .testimonials, .cta, .contact {\n                padding: 20px;\n            }\n        }\n    </style>\n</head>\n<body>\n    <header>\n        <h1>Welcome to HeatMate Mini</h1>\n    </header>\n    <section class="hero">\n        <h2>Your Perfect Heating Solution</h2>\n        <p>Experience comfort like never before with HeatMate Mini.</p>\n    </section>\n    <section class="features">\n        <h2>Features</h2>\n        <div class="feature">\n            <h3>Compact Design</h3>\n            <p>Designed to fit any space without compromising on power.</p>\n        </div>\n        <div class="feature">\n            <h3>Energy Efficient</h3>\n            <p>Save on energy bills while keeping warm.</p>\n        </div>\n        <div class="feature">\n            <h3>Smart Controls</h3>\n            <p>Control your heating from anywhere with our app.</p>\n        </div>\n    </section>\n    <section class="testimonials">\n        <h2>What Our Customers Say</h2>\n        <blockquote>\n            <p>"HeatMate Mini changed my life! It's efficient and easy to use." - Sarah J.</p>\n        </blockquote>\n        <blockquote>\n            <p>"Finally, a heating solution that works! Highly recommend!" - John D.</p>\n        </blockquote>\n    </section>\n    <section class="cta">\n        <h2>Get Your HeatMate Mini Today!</h2>\n        <p>Contact us now to learn more.</p>\n    </section>\n    <section class="contact">\n        <h2>Contact Us</h2>\n        <form>\n            <input type="text" placeholder="Your Name" required>\n            <input type="email" placeholder="Your Email" required>\n            <textarea rows="4" placeholder="Your Message" required></textarea>\n            <button type="submit">Submit</button>\n        </form>\n    </section>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeatMate Mini Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .hero { background: url('hero-bg.jpg') no-repeat center center/cover; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; }
+        .features { display: flex; justify-content: space-around; padding: 50px 10%; }
+        .feature { width: 30%; text-align: center; }
+        .cta { background-color: #ff6200ee; color: white; padding: 15px 30px; font-size: 20px; border: none; cursor: pointer; margin: 20px; }
+        .contact-form { padding: 50px; background-color: #f9f9f9; }
+        .form-group { margin-bottom: 15px; }
+        @media (max-width: 768px) {
+            .features { flex-direction: column; align-items: center; }
+            .feature { width: 80%; margin-bottom: 30px; }
+            .cta { width: 80%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to HeatMate Mini</h1>
+        <p>The ultimate portable heating solution for all your needs.</p>
+        <button class="cta">Get Yours Today!</button>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <h2>Feature 1</h2>
+            <p>Short description about feature 1.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature 2</h2>
+            <p>Short description about feature 2.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature 3</h2>
+            <p>Short description about feature 3.</p>
+        </div>
+    </div>
+    <div class="social-proof">
+        <h2>What Our Customers Say</h2>
+        <blockquote>
+            <p>"This product changed my life!" - Happy Customer</p>
+        </blockquote>
+    </div>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="cta">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
