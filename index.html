@@ -3,151 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heatmate Mini Landing Page</title>
+    <title>HeatMate Mini - Portable Pocket Heater</title>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #fff;
+            margin: 0;
+            padding: 0;
             color: #333;
+            background: linear-gradient(to right, #f7f7f7, #e3e3e3);
+        }
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
-        header {
-            background: linear-gradient(to right, #ff6200, #ff9444);
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-        h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        .social-cards, .feature-cards, .testimonial-cards {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+        .features, .testimonials, .contact {
             margin: 20px 0;
         }
-        .card {
-            background: #f4f4f4;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            flex-basis: calc(30% - 40px);
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: scale(1.05);
+        .feature, .testimonial {
+            background: white;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .cta {
-            text-align: center;
-            margin: 40px 0;
-            background: #ff6200;
-            padding: 20px;
+            background-color: #4CAF50;
             color: white;
-        }
-        .cta button {
-            background: white;
-            color: #ff6200;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            margin: 20px 0;
             cursor: pointer;
+            transition: background 0.3s ease;
         }
-        footer {
-            background: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
+        .cta:hover {
+            background-color: #45a049;
+        }
+        .socials {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .socials img {
+            max-width: 100px;
+            transition: transform 0.3s ease;
+        }
+        .socials img:hover {
+            transform: scale(1.1);
         }
         form {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            max-width: 500px;
-            margin: auto;
+            margin-top: 20px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background-color: #007B9E;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Cold Hands? Not Anymore</h1>
+        <h1>Welcome to HeatMate Mini</h1>
+        <p>Your perfect portable pocket heater!</p>
     </header>
     <div class="container">
-        <section class="social-cards">
-            <div class="card">
-                <h2>Instagram Post</h2>
-                <p>Tagline for Instagram ad.</p>
-                <button>Learn More</button>
+        <section class="socials">
+            <a href="#"><img src="path_to_ad1.jpg" alt="Ad 1"></a>
+            <a href="#"><img src="path_to_ad2.jpg" alt="Ad 2"></a>
+            <a href="#"><img src="path_to_ad3.jpg" alt="Ad 3"></a>
+            <a href="#"><img src="path_to_ad4.jpg" alt="Ad 4"></a>
+            <a href="#"><img src="path_to_ad5.jpg" alt="Ad 5"></a>
+        </section>
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="feature">
+                <h3>Compact Design</h3>
+                <p>Easily fits into your pocket or bag.</p>
             </div>
-            <div class="card">
-                <h2>Facebook Ad</h2>
-                <p>Tagline for Facebook ad.</p>
-                <button>Learn More</button>
+            <div class="feature">
+                <h3>Quick Heating</h3>
+                <p>Preheats in seconds to keep you warm.</p>
             </div>
-            <div class="card">
-                <h2>Instagram Story</h2>
-                <p>Tagline for Instagram story.</p>
-                <button>Learn More</button>
-            </div>
-            <div class="card">
-                <h2>LinkedIn Ad</h2>
-                <p>Tagline for LinkedIn ad.</p>
-                <button>Learn More</button>
-            </div>
-            <div class="card">
-                <h2>TikTok Post</h2>
-                <p>Tagline for TikTok post.</p>
-                <button>Learn More</button>
+            <div class="feature">
+                <h3>Safe to Use</h3>
+                <p>Auto-shutoff feature for your peace of mind.</p>
             </div>
         </section>
-        <section class="feature-cards">
-            <div class="card">
-                <h2>Heats in 5 Seconds</h2>
-                <p>Description of quick heating feature.</p>
+        <section class="testimonials">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonial">
+                <p>"I love my HeatMate Mini! It's a game changer for winter." - Sarah J.</p>
             </div>
-            <div class="card">
-                <h2>Pocket-Sized Design</h2>
-                <p>Description of the pocket-sized feature.</p>
+            <div class="testimonial">
+                <p>"Compact and heats up so fast! Highly recommend!" - Mike P.</p>
             </div>
-            <div class="card">
-                <h2>Stay Focused & Warm</h2>
-                <p>Description of maintaining warmth.</p>
-            </div>
-        </section>
-        <section class="testimonial-cards">
-            <div class="card">
-                <h2>⭐⭐⭐⭐⭐</h2>
-                <p>"This product changed my life!" - Happy Customer</p>
-            </div>
-            <div class="card">
-                <h2>⭐⭐⭐⭐⭐</h2>
-                <p>"Unbelievably warm and handy!" - Satisfied User</p>
-            </div>
-            <div class="card">
-                <h2>⭐⭐⭐⭐⭐</h2>
-                <p>"Can't live without it!" - Loyal Customer</p>
+            <div class="testimonial">
+                <p>"The best portable heater I've ever used!" - Anna K.</p>
             </div>
         </section>
         <section class="cta">
-            <h2>Get Yours Now!</h2>
-            <button>Order Now</button>
+            <h2>Get Yours Today!</h2>
+            <button>Buy Now</button>
         </section>
-        <form>
+        <section class="contact">
             <h2>Contact Us</h2>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
     </div>
-    <footer>
-        <p>&copy; 2026 Heatmate. Follow us on our social media!</p>
-    </footer>
 </body>
 </html>
